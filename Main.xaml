@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1254,6833" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1254,6915" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -132,7 +132,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="912,6768" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="912,6850" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd2:DataTable" Name="dt" />
       <Variable x:TypeArguments="x:String" Name="ExeUsername" />
@@ -154,14 +154,14 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="850,6657" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="850,6739" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="812,6074" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence sap:VirtualizedContainerService.HintSize="812,6156" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -181,36 +181,16 @@
           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="750,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Program Başladı&quot;]" />
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="config.xlsx ten kullanıcı adları parolaları ve path leri alır. " DisplayName="config.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="750,144" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="config.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <OutArgument x:TypeArguments="x:String" x:Key="ou_ExePassword">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="ExePassword" />
-              </OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="ou_ExePath">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="ExePath" />
-              </OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="ou_ExeUsername">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="ExeUsername" />
-              </OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="ou_SenderMailAdress">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="SenderMailAdress" />
-              </OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="ou_SenderMailPassword">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="SenderMailPassword" />
-              </OutArgument>
-              <OutArgument x:TypeArguments="x:Int32" x:Key="ou_SenderSmtpPort">
-                <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="SenderSmtpPort" />
-              </OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="ou_SenderSmtpServer">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="SenderSmtpServer" />
-              </OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="ou_ToMailAdress">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="ToMailAdress" />
-              </OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="ou_CcMailAdress">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="CcMailAdress" />
-              </OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="ou_BccMailAdress">
-                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="BccMailAdress" />
-              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ou_ExePassword">[ExePassword]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ou_ExePath">[ExePath]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ou_ExeUsername">[ExeUsername]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ou_SenderMailAdress">[SenderMailAdress]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ou_SenderMailPassword">[SenderMailPassword]</OutArgument>
+              <OutArgument x:TypeArguments="x:Int32" x:Key="ou_SenderSmtpPort">[SenderSmtpPort]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ou_SenderSmtpServer">[SenderSmtpServer]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ou_ToMailAdress">[ToMailAdress]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ou_CcMailAdress">[CcMailAdress]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="ou_BccMailAdress">[BccMailAdress]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -264,14 +244,14 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
           </Sequence>
-          <Sequence sap:VirtualizedContainerService.HintSize="750,3209" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence sap:VirtualizedContainerService.HintSize="750,3249" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence sap2010:Annotation.AnnotationText="Config dosyasından gelen kullanıcı adı ve parolalarını Computer Vision kullanarak ekrana girer ve butona tıklar" DisplayName="Sequence Computer Vision" sap:VirtualizedContainerService.HintSize="688,1687" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence sap2010:Annotation.AnnotationText="Config dosyasından gelen kullanıcı adı ve parolalarını Computer Vision kullanarak ekrana girer ve butona tıklar" DisplayName="Sequence Computer Vision" sap:VirtualizedContainerService.HintSize="688,1727" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -287,7 +267,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="5eaf20e8-c357-4fb7-95a6-3c087c4e570e" DisplayName="CV Screen Scope" sap:VirtualizedContainerService.HintSize="434,1402" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+              <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="5eaf20e8-c357-4fb7-95a6-3c087c4e570e" DisplayName="CV Screen Scope" sap:VirtualizedContainerService.HintSize="434,1442" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                 <p:CVScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
@@ -599,19 +579,18 @@
             <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Bcc="[BccMailAdress]" Body="tarihli xyzdata raporu ektedir" Cc="[CcMailAdress]" DisplayName="Send SMTP Mail Message" Email="[SenderMailAdress]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="388,152" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="[SenderMailPassword]" Port="[SenderSmtpPort]" SecureConnection="Auto" Server="[SenderSmtpServer]" Subject="tarihli xyzdata raporu" To="[ToMailAdress]">
               <ui:SendMail.Files>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String">xyzdata.xlsx</Literal>
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String">xyzdata.xlsx</InArgument>
                 </scg:List>
               </ui:SendMail.Files>
             </ui:SendMail>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[ToMailAdress + &quot; Mail adresine gönderildi&quot;]" />
           </Sequence>
-          <Sequence sap:VirtualizedContainerService.HintSize="750,639" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <Sequence sap2010:Annotation.AnnotationText="xyzdata.xlsx dosyasını zaman damgaı ile başka bir klasöre yedekler.&#xD;&#xA;" sap:VirtualizedContainerService.HintSize="750,681" sap2010:WorkflowViewState.IdRef="Sequence_18">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
