@@ -1,0 +1,67 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "FolderName&Sequence_1",
+        "DateTimer&Sequence_1",
+        "BccMailAdress&Sequence_1",
+        "CcMailAdress&Sequence_1",
+        "ToMailAdress&Sequence_1",
+        "SenderSmtpServer&Sequence_1",
+        "SenderSmtpPort&Sequence_1",
+        "SenderMailPassword&Sequence_1",
+        "SenderMailAdress&Sequence_1",
+        "dt&Sequence_1",
+        "ExeUsername&Sequence_1",
+        "ExePassword&Sequence_1",
+        "ExePath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "config.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ConfigPath&Sequence_3",
+        "ConfigSheetName&Sequence_3",
+        "ConfigDt&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "ou_BccMailAdress",
+        "ou_CcMailAdress",
+        "ou_ToMailAdress",
+        "ou_SenderSmtpServer",
+        "ou_SenderSmtpPort",
+        "ou_SenderMailPassword",
+        "ou_SenderMailAdress",
+        "ou_ExeUsername",
+        "ou_ExePath",
+        "ou_ExePassword"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "kill.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "KillPrograms&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
